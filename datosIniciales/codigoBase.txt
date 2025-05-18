@@ -1,0 +1,127 @@
+// Contenido del fichero style.css
+h1 {
+    margin: 0 auto;
+}
+
+.error {
+    color: red;
+}
+
+<!-- Para añadir al HEAD del index.html -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- celda de acciones en la tabla de libros -->
+    <td>
+        <button class="borrar" title="Eliminar">
+          <span class="material-icons">delete</span>
+        </button>
+        <button class="prestar" title="Prestar">
+          <span class="material-icons">login</span>
+        </button>
+        <button class="devolver" title="Devolver">
+          <span class="material-icons">undo</span>
+        </button>
+    </td>
+
+
+<!-- HTML de cada raiobutton para mostrar los temas en el -->
+<!-- formulario, que hay que completar con value, ... -->
+    <div>
+        <input type="radio" class="form-check-input" >
+        <label></label>
+    </div>
+
+<!-- HTML a renderizar en el main.js -->
+  <div class="container">
+  <header>
+      <h1>Gestión de biblioteca</h1>
+  </header>
+
+  <div class="row">
+      <div class="col-sm-8">
+          <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12" id="autores">
+                  <h2>Autores</h2>
+                  <table class="table table-striped table-hover">
+                      <thead class="thead-dark bg-primary">
+                          <tr>
+                              <th>Id</th>
+                              <th>Apellidos, nombre</th>
+                              <th>Nacionalidad</th>
+                              <th>Acciones</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <!-- Aquí insertaremos los autores-->
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+
+          <!-- Tabla de Libros -->
+          <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12" id="libros">
+                  <h2>Libros</h2>
+                  <table class="table table-striped table-hover">
+                      <thead class="thead-dark bg-primary">
+                          <tr>
+                              <th>Id</th>
+                              <th>Nombre</th>
+                              <th>Descipción</th>
+                              <th>Categoría</th>
+                              <th>Fecha préstamo</th>
+                              <th>Acciones</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <!-- Aquí insertaremos los libros-->
+                      </tbody>
+                  </table>
+                  <p class="lead float-right">Total de libros: <strong id="total">0</strong></p>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-4">
+          <form novalidate>
+              <fieldset>
+                  <legend>Añadir libro</legend>
+                  <div class="form-group">
+                      <label>Nombre:</label>
+                      <input type="text" class="form-control" id="form-nombre">
+                      <span id="error-nombre" class="error"></span>
+                  </div>
+                  <div class="form-group">
+                      <label>ISBN:</label>
+                      <input type="text" class="form-control" id="form-ISBN">
+                      <span id="error-ISBN" class="error"></span>
+                  </div>
+                  <div class="form-group">
+                      <label>Descripción:</label>
+                      <textarea class="form-control" id="form-descrip"></textarea>
+                      <span id="error-descrip" class="error"></span>
+                  </div>
+                  <div class="form-group">
+                      <label>Autor:</label>
+                      <select class="form-control" id="form-autor">
+                          <option value="">- Selecciona un autor -</option>
+                      </select>
+                      <span id="error-autor" class="error"></span>
+                  </div>
+                  <div class="form-check">
+                    <label>Tema:</label>
+                    <br>
+                    <div id="form-tema">
+                        <!-- Aquí metemos el DIV del radiobutton para cada tema, completándolos -->
+                    </div>
+                    <span id="error-tema" class="error"></span>
+                    </div>
+                  <br>
+                  <button type="submit" class="btn btn-default btn-primary">Guardar</button>
+                  <button type="reset" class="btn btn-danger">Reset</button>
+              </fieldset>
+          </form>
+      </div>
+  </div>
+

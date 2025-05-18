@@ -1,0 +1,127 @@
+{
+  "temas": [
+    {
+      "id": "1",
+      "nombre": "Infantil"
+    },
+    {
+      "id": "2",
+      "nombre": "Novela"
+    },
+    {
+      "id": "5",
+      "nombre": "Biografía"
+    },
+    {
+      "id": "8",
+      "nombre": "Informática"
+    }
+  ],
+  "autores": [
+    {
+      "id": "1",
+      "nombre": "Julio",
+      "apellidos": "Verne",
+      "nacionalidad": "Fra",
+      "img": "julioVerne.jpeg"
+    },
+    {
+      "id": "3",
+      "nombre": "Andreu S.",
+      "apellidos": "Tanenbaum",
+      "nacionalidad": "EEUU",
+      "img": "tanenbaum.jpeg"
+    },
+    {
+      "id": "5",
+      "nombre": "Hans Christian",
+      "apellidos": "Andersen",
+      "nacionalidad": "Din",
+      "img": "andersen.jpeg"
+    }
+  ],
+  "libros": [
+    {
+      "id": "1",
+      "ISBN": "0130313580",
+      "nombre": "Sistemas operativos modernos",
+      "tema": 8,
+      "autor": 3,
+      "desc": "El Sistemas Operativo tiene como misión administrar todos los elementos de un sistema complejo. ",
+      "img": "sistemasOperativosModernos.jpeg"
+    },
+    {
+      "id": "2",
+      "ISBN": "0131485210",
+      "nombre": "Structured Computer Organization",
+      "tema": 8,
+      "autor": 3,
+      "desc": "Una computadora digital es una máquina que puede hacer el trabajo para las personas mediante la realización de las instrucciones dadas a la misma.",
+      "img": "structuredComputerOrganization.jpeg"
+    },
+    {
+      "id": "3",
+      "ISBN": "0320313580",
+      "nombre": "El patito feo",
+      "tema": 1,
+      "autor": 5,
+      "desc": "Una pata tiene varios patitos, pero uno de ellos es mucho más feo, tosco y torpe que el resto, por lo que todos le dan de lado y se burlan de él.",
+      "img": "elPatitoFeo.jpeg"
+    },
+    {
+      "id": "5",
+      "ISBN": "0232894534",
+      "nombre": "20.000 leguas de viaje submarino ",
+      "tema": 2,
+      "autor": 1,
+      "uds": 4,
+      "desc": "El profesor Pierre Aronnax es hecho prisionero por el Capitán Nemo y conducido por los océanos a bordo del submarino Nautilus, en compañía de su criado Conseil y el arponero Ned Land.",
+      "img": "20000leguas.jpeg"
+    },
+    {
+      "id": "6",
+      "ISBN": "0378124589",
+      "nombre": "Un viaje a la Luna",
+      "tema": 2,
+      "autor": 1,
+      "desc": "Se envía a la Luna un proyectil que con el monstruoso cañón Columbiad que atravesará el espacio y descubrirá un mundo lunar hasta entonces en penumbras.",
+      "img": "unViajeALaLuna.jpeg"
+    },
+    {
+      "id": "7",
+      "ISBN": "0190212175",
+      "nombre": "Cinco semanas en globo",
+      "tema": 2,
+      "autor": 1,
+      "desc": "El doctor Fergusson emprende un viaje aéreo en un globo construido según su propio diseño: el Victoria. Sus compañeros de empresa son Dick Kennedy y el criado Joe.",
+      "img": "5semanasEnGlobo.jpeg"
+    },
+    {
+      "id": "5f92",
+      "nombre": "Una luna",
+      "ISBN": "0123456789",
+      "desc": "qewqeqweq",
+      "autor": "1",
+      "tema": "1",
+      "fechaPrestamo": null
+    },
+    {
+      "id": "7c18",
+      "nombre": "Unaluna",
+      "ISBN": "1234567890",
+      "desc": "Una luna es un libro maravilloso",
+      "autor": "1",
+      "tema": "1",
+      "fechaPrestamo": null
+    },
+    {
+      "id": "38ad",
+      "nombre": "e",
+      "ISBN": "e",
+      "desc": "e",
+      "autor": "1",
+      "tema": "1",
+      "fechaPrestamo": null
+    }
+  ]
+}

@@ -1,12 +1,40 @@
 const API_URL = 'http://localhost:3000/';
 
-export async function getCars() {
-  const response = await fetch(API_URL + 'cars');
+export async function getAutores() {
+  const response = await fetch(API_URL + 'autores');
   return await response.json();
 }
 
-export async function getOrigins() {
-  const response = await fetch(API_URL + 'origins');
+export async function getTema(idCategoria) {
+  const response = await fetch(API_URL + 'temas?categoria=' + idCategoria);
+  const tema = await response.json();
+  return tema.nombre;
+}
+
+export async function addLlibre(libro) {
+  const response = await fetch(API_URL + 'libros', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(libro)
+  });
+  return await response.json();
+}
+export async function borrarLibro(id) {
+  const response = await fetch(API_URL + 'libros/' + id, {
+    method: 'DELETE'
+  });
+  return await response.json();
+}
+
+export async function getTemas() {
+  const response = await fetch(API_URL + 'temas');
+  return await response.json();
+}
+
+export async function getLibrosAutor(autorId){
+  const response = await (fetch(API_URL + 'libros?autor=' + autorId));
   return await response.json();
 }
 
